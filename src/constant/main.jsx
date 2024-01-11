@@ -47,7 +47,7 @@ export const PRODUCTS = [
     id: "06",
     name: "PEACH ICE",
     bgColor: "#fba400",
-    textColor: "#",
+    textColor: "#fff",
     className: "peach_ice",
   },
 ];
