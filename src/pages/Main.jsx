@@ -18,24 +18,15 @@ export default function Main() {
 
   return (
     <>
-      {/* <Navbar /> */}
-
-      {/* <About /> */}
-
+      <Navbar />
       <Hero />
-
+      {/* <About /> */}
       {/* <Products /> */}
-
-      {/* <ProductsTest /> */}
-
+      <ProductsTest />
       {/* <Testimonials /> */}
-
       {/* <Dealers /> */}
-
       {/* <Authentication /> */}
-
       {/* <Footer /> */}
-
       {/* {show && <TopButton />} */}
     </>
   );

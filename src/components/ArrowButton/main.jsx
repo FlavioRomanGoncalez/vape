@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 // STYLE
 import styles from "./main.module.css";
 
@@ -21,7 +23,6 @@ export default function ArrowButton({ href }) {
   return (
     <>
       <animated.a href={href} style={props} className={styles.container}>
-        {/* <div className={styles.dot}></div> */}
         <FaArrowDown className={styles.button} />
       </animated.a>
     </>

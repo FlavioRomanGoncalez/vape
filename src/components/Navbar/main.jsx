@@ -19,8 +19,8 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={styles.container_nav}
-        style={{ backgroundColor: `${change ? "#252525" : "transparent"}` }}
+        className={`${styles.container_nav} animate__animated animate__fadeInDown`}
+        style={{ backgroundColor: `${change ? "#00000080" : "transparent"}` }}
       >
         <a href="#about" className={styles.container_logo}>
           <img src={logo} alt="logo" className={styles.logo} />
