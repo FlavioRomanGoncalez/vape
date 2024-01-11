@@ -1,0 +1,47 @@
+.container {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  border-radius: 100%;
+  justify-content: center;
+  background-color: #252525 !important;
+  margin: 10px auto 0 auto;
+  position: fixed;
+  right: 1%;
+  bottom: 2%;
+}
+
+.container:hover > .dot {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background-color: #fff;
+  border-radius: 100%;
+  transition: all 0.2s ease;
+}
+
+.button {
+  font-size: 1.2rem;
+  transition: all 0.1s ease;
+}
+
+.container_button {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}

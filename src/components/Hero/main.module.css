@@ -1,0 +1,152 @@
+.container {
+  display: flex;
+  position: relative;
+  min-height: calc(100vh);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.container_images {
+  width: 100%;
+  height: auto;
+  position: relative;
+  /* margin-top: 40px; */
+  transition: all 0.2s ease;
+}
+
+.image_01,
+.image_02,
+.image_03 {
+  /* left: 0; */
+  /* right: 0; */
+  width: 220px;
+  margin: auto;
+  height: auto;
+  /* position: absolute; */
+  transition: all 0.2s;
+  animation: image_01 7s infinite;
+}
+
+@keyframes image_01 {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+.image_02 {
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  transition: all 0.2s;
+  animation: image_02 9s infinite;
+}
+
+@keyframes image_02 {
+  0% {
+    transform: rotate(40deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(40deg);
+  }
+}
+
+.image_03 {
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  transition: all 0.2s;
+  animation: image_03 11s infinite;
+}
+
+@keyframes image_03 {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.desc {
+  width: 100%;
+  margin: auto;
+  padding: 0 10px;
+  display: block;
+  max-width: 800px;
+  text-align: center;
+  color: black;
+}
+
+@media (max-width: 360px) {
+  .container_images {
+    margin-top: 0px;
+  }
+  .container_info {
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .image_01,
+  .image_02,
+  .image_03 {
+    width: 150px;
+  }
+  .container_info {
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 428px) {
+  .image_01,
+  .image_02,
+  .image_03 {
+    width: 170px;
+  }
+  .container_info {
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .container_images {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container_info {
+    margin-bottom: 30px;
+  }
+}

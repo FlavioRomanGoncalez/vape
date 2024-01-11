@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  min-height: 30vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+  background-color: #000;
+}
+
+.title {
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.desc {
+  width: 100%;
+  color: #fff;
+  margin: auto;
+  padding: 0 10px;
+  max-width: 650px;
+  text-align: center;
+}
+
+.flags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.flag {
+  font-size: 4rem;
+  width: 500px;
+}
+
+@media (max-width: 800px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 428px) {
+  .title {
+    font-size: 1.7rem;
+  }
+}
