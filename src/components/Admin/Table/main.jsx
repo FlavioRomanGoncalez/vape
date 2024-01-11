@@ -81,6 +81,7 @@ export default function Table() {
         100px 100px 80px rgba(0, 0, 0, 0.07)`,
           "& .table_header": {
             fontSize: "1.2rem",
+            fontWeight: 400,
           },
         }}
         rows={rows}

@@ -1,13 +1,28 @@
+// FORMIK
+import { useFormik } from "formik";
+
+// MATERIAL UI
+import { Grid } from "@mui/material";
+
 // STYLE
 import styles from "./main.module.css";
 
-// MATERIAL UI
-import { Grid, TextField } from "@mui/material";
+// COMPONENT
+import TextFieldComponet from "../Elements/TextFieldComponte";
 
 // IMAGE
 import logo from "../../assets/lamborghini_text_logo_white.png";
 
+// INITIALVALUES / VALIDATIONS
+import { initialValues, validationSchema } from "./validations";
+
 export default function Login() {
+  const onSubmit = (values) => {
+    console.log(values);
+  };
+
+  const formik = useFormik({ initialValues, validationSchema, onSubmit });
+
   return (
     <main className={styles.container}>
       <Grid container>
@@ -34,27 +49,32 @@ export default function Login() {
           lg={6}
           className={`${styles.content}`}
         >
-          <form action="" className={`${styles.form}`}>
+          <form onSubmit={formik.handleSubmit} className={`${styles.form}`}>
             <h1
               className={`${styles.title} "animate__animated animate__fadeInDown"`}
             >
               Login In
             </h1>
-            <TextField
+            <TextFieldComponet
               type="email"
+              name="email"
               label="EMAIL"
+              formik={formik}
               variant="standard"
               className="animate__animated animate__fadeInUp"
               placeholder="Enter your email"
             />
-            <TextField
+            <TextFieldComponet
               type="password"
+              name="password"
               label="PASSWORD"
+              formik={formik}
               variant="standard"
-              className="animate__animated animate__fadeInUp "
+              className="animate__animated animate__fadeInUp"
               placeholder="Enter your password"
             />
             <button
+              type="submit"
               className={`${styles.btn} animate__animated animate__fadeInUp`}
             >
               Get started

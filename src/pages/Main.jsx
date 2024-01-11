@@ -7,36 +7,36 @@ import Dealers from "../components/Dealers/main";
 import Products from "../components/Products/main";
 import TopButton from "../components/TopButton/main";
 import Testimonials from "../components/Testimonials/main";
+import ProductsTest from "../components/Products_test/main";
 import Authentication from "../components/Authentication/main";
 
 // CUSTOM HOOK
 import useButtonTop from "../hooks/useButtonTop";
-import ProductsTest from "../components/Products_test/main";
 
 export default function Main() {
   const { show } = useButtonTop();
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
-      <About />
+      {/* <About /> */}
 
       <Hero />
 
-      <Products />
+      {/* <Products /> */}
 
-      <ProductsTest />
+      {/* <ProductsTest /> */}
 
-      <Testimonials />
+      {/* <Testimonials /> */}
 
-      <Dealers />
+      {/* <Dealers /> */}
 
-      <Authentication />
+      {/* <Authentication /> */}
 
-      <Footer />
+      {/* <Footer /> */}
 
-      {show && <TopButton />}
+      {/* {show && <TopButton />} */}
     </>
   );
 }
