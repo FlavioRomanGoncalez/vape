@@ -42,6 +42,7 @@ export default function Navbar() {
             );
           })}
         </ul>
+        <button className={styles.contact}>Contact Us</button>
         <div className={styles.nav_option}>
           <img src={"../../assets/img01.webp"} alt="" />
           <FaBars

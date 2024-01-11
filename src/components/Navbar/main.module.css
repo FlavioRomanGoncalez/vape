@@ -24,12 +24,16 @@
 .nav_lists {
   display: flex;
   align-items: center;
-  column-gap: 30px;
+  /* column-gap: 30px; */
+  border-radius: 50px;
+  padding: 2px;
+  border: 1px solid #3b3b3b;
 }
 
 .nav_list {
   color: #fff;
   cursor: pointer;
+  padding: 10px 20px;
   font-size: 1rem;
   transition: all 0.2s ease;
   font-weight: 400;
@@ -37,7 +41,18 @@
 }
 
 .nav_list:hover {
-  transform: translateY(-5px);
+  background-color: #272727;
+}
+
+.nav_list:first-child {
+  background-color: #272727;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.nav_list:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .nav_option {
@@ -45,6 +60,16 @@
   display: none;
   z-index: 100;
   color: #fff;
+}
+
+.contact {
+  padding: 10px 12px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "BolsterRegular";
+  border-radius: 50px;
+  letter-spacing: 1px;
+  background-color: #fff;
 }
 
 @media (max-width: 1000px) {
