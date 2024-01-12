@@ -19,15 +19,21 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`${styles.container_nav} animate__animated animate__fadeInDown`}
-        style={{ backgroundColor: `${change ? "#00000080" : "transparent"}` }}
+        className={`${styles.container_nav}`}
+        style={{
+          // opacity: `${show ? "0" : "1"}`,
+          backgroundColor: `${change ? "#25252550" : "transparent"}`,
+        }}
       >
-        <a href="#about" className={styles.container_logo}>
+        {/* LOGO */}
+        <a href="#home" className={styles.container_logo}>
           <img src={logo} alt="logo" className={styles.logo} />
         </a>
+
+        {/* OPTIONS */}
         <ul
           className={styles.nav_lists}
-          style={{ top: `${show ? "0%" : "100%"}` }}
+          style={{ top: `${show ? "0%" : "-200%"}` }}
         >
           {NAV_OPTIONS.map((value) => {
             return (
@@ -42,7 +48,11 @@ export default function Navbar() {
             );
           })}
         </ul>
+
+        {/* CONTACT US */}
         <button className={styles.contact}>Contact Us</button>
+
+        {/* RESPONSIVE OPTIONS */}
         <div className={styles.nav_option}>
           <img src={"../../assets/img01.webp"} alt="" />
           <FaBars

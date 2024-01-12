@@ -1,6 +1,6 @@
 export const NAV_OPTIONS = [
-  { id: 1, href: "#about", text: "HOME", url: "" },
-  { id: 2, href: "#home", text: "ABOUT", url: "" },
+  { id: 1, href: "#home", text: "HOME", url: "" },
+  { id: 2, href: "#about", text: "ABOUT", url: "" },
   { id: 3, href: "#products", text: "PRODUCTS", url: "" },
   { id: 4, href: "#testimonials", text: "TESTIMONIALS", url: "" },
   { id: 5, href: "#dealers", text: "DEALERS", url: "" },

@@ -5,20 +5,19 @@ import styles from "./main.module.css";
 // import vid01 from "../../assets/video.mp4";
 
 // IMAGE
-import img01 from "../../assets/vapes/vape.webp";
+import img01 from "../../assets/test.webp";
+
+// REACT ICONS
+import ArrowButton from "../ArrowButton/main";
 
 // REACT SPRING
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import ArrowButton from "../ArrowButton/main";
 
 export default function About() {
-  const estiloContenedor = {
-    height: "calc(100vh - 50px)", // Resta 50px del 100vh
-  };
   const alignCenter = { display: "flex", alignItems: "center" };
 
   return (
-    <section style={estiloContenedor} id="about" className={styles.container}>
+    <section id="about" className={styles.container}>
       {/* VIDEO */}
       {/* <video className={styles.video} autoPlay loop muted>
         <source src={vid01} type="video/mp4" />
@@ -31,7 +30,7 @@ export default function About() {
           speed={0.1}
           style={{ ...alignCenter, justifyContent: "center" }}
         >
-          <h1 className={styles.title}>HOME</h1>
+          <h1 className={styles.title}>ABOUT US</h1>
         </ParallaxLayer>
 
         {/* PARALLAX 2 */}
@@ -41,7 +40,7 @@ export default function About() {
         >
           <div className={`${styles.card} ${styles.sticky}`}>
             <img src={img01} className={styles.image} />
-            <ArrowButton href={"#home"} />
+            <ArrowButton href={"#products"} />
           </div>
         </ParallaxLayer>
 

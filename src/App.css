@@ -25,6 +25,11 @@ html {
   scroll-behavior: smooth;
 }
 
+#root {
+  height: 100% !important;
+  width: 100% !important;
+}
+
 body {
   font-family: "BolsterRegular", sans-serif !important;
   -ms-overflow-style: none;
