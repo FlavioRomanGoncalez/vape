@@ -24,7 +24,7 @@ export default function Main() {
       <Products />
       <Dealers />
       <Testimonials />
-      {/* <Authentication /> */}
+      <Authentication />
       <Footer />
       {show && <TopButton />}
     </ParallaxProvider>
